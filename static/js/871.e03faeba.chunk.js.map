@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/871.e03faeba.chunk.js","mappings":"iKAWA,UARa,WACX,OACE,0BACE,0KAGL,C","sources":["components/home.jsx"],"sourcesContent":["// Home.js\nimport React from 'react';\n\nconst Home = () => {\n  return (\n    <div>\n      <h2>Список популярних фільмів</h2>\n    </div>\n  );\n};\n\nexport default Home;\n"],"names":[],"sourceRoot":""}

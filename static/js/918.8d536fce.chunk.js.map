@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/918.8d536fce.chunk.js","mappings":"iKAWA,UARe,WACb,OACE,0BACE,0MAGL,C","sources":["components/movies.jsx"],"sourcesContent":["// Movies.js\nimport React from 'react';\n\nconst Movies = () => {\n  return (\n    <div>\n      <h2>Пошук фільмів за ключовим словом</h2>\n    </div>\n  );\n};\n\nexport default Movies;\n"],"names":[],"sourceRoot":""}
