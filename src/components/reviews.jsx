@@ -1,4 +1,3 @@
-// Reviews.js
 import React from 'react';
 
 const Reviews = () => {
