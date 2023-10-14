@@ -1,0 +1,51 @@
+.listNavPage {
+  display: flex;
+  gap: 24px;
+
+  margin: 12px 0px 0px 24px;
+
+  font-size: 24px;
+}
+
+.listNavLink {
+  display: block;
+
+  font-size: 20px;
+
+  margin-bottom: 10px;
+}
+
+.inputSearch {
+  font-size: 16px;
+
+  padding: 6px 12px;
+  padding-left: 10px;
+}
+
+.btnSearch {
+  display: flex;
+  padding: 8px 12px;
+  margin-top: 6px;
+}
+
+.description {
+  padding: 5px;
+  background-color: rgb(166, 164, 164);
+  display: flex;
+}
+
+.descriptionText {
+  margin-left: 12px;
+}
+
+.textMovies {
+  width: 560px;
+  color: black;
+  font-size: 16px;
+}
+
+.error {
+  font-size: 36px;
+  background-color: red;
+  padding: 12px;
+}
