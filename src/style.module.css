@@ -49,3 +49,17 @@
   background-color: red;
   padding: 12px;
 }
+
+.listCast {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: rgb(166, 164, 164);
+
+  gap: 14px 36px;
+  padding: 5px;
+}
+
+.itemCast {
+  list-style: none;
+}

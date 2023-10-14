@@ -46,14 +46,14 @@ const Movies = () => {
 
   return (
     <div>
-      <h1>Пошук фільмів за ключовим словом</h1>
+      <h1>Search for movies by keyword</h1>
       <form onSubmit={handleSubmit} className={css.formSumbit}>
         <input
           className={css.inputSearch}
           type="text"
           value={query}
           onChange={handleInputChange}
-          placeholder="напишіть назву фільму"
+          placeholder="write the name of the movie"
           required
         />
         <button type="submit" className={css.btnSearch}>

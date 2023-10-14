@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import css from 'style.module.css';
 
@@ -35,7 +36,7 @@ const MovieDetails = () => {
 
   return (
     <div>
-      <h2>Детальна інформація про фільм</h2>
+      <h2>More information about the movie</h2>
       {movieDetails && (
         <div className={css.description}>
           <img
@@ -46,7 +47,7 @@ const MovieDetails = () => {
             <h3>{movieDetails.title}</h3>
             <p className={css.textMovies}>{movieDetails.overview}</p>
             <h5>
-              Середня оцінка: <span>{movieDetails.vote_average}</span>
+              Popularity: <span>{movieDetails.popularity}</span>
             </h5>
             <h4>Genres</h4>
             <ul>
@@ -54,6 +55,7 @@ const MovieDetails = () => {
                 <li key={genre.id}>{genre.name}</li>
               ))}
             </ul>
+            <Link to={`/movies/${movieDetails.id}/cast`}>Cast</Link>
           </div>
         </div>
       )}

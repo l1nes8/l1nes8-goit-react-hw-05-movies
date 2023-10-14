@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Список популярних фільмів</h1>
+      <h1>List of popular movies</h1>
       <ul>
         {popularMovies.map(movie => (
           <NavLink
