@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import css from 'style.module.css';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Movies = () => {
+  const location = useLocation();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
 
@@ -64,7 +66,7 @@ const Movies = () => {
       <ul>
         {results.map(movie => (
           <li key={movie.id}>
-            <Link to={`/movies/${movie.id}`}>
+            <Link state={{ from: location }} to={`/movies/${movie.id}`}>
               <h3>{movie.title || movie.name}</h3>
             </Link>
           </li>

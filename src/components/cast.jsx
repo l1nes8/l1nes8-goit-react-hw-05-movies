@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation, Link } from 'react-router-dom';
 import css from 'style.module.css';
 
 const Cast = () => {
   const [cast, setCast] = useState([]);
   const [error, serError] = useState(null);
   const { movieId } = useParams();
+  const location = useLocation();
+  const backLinkHref = useRef(location.state?.from ?? `/movies/${movieId}`);
 
   useEffect(() => {
     const options = {
@@ -34,6 +36,7 @@ const Cast = () => {
 
   return (
     <div>
+      <Link to={backLinkHref.current}>Go back</Link>
       <h2>Cast Information</h2>
       {cast.length > 0 && (
         <ul className={css.listCast}>

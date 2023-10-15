@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
@@ -8,6 +8,7 @@ const MovieDetails = () => {
   const [movieDetails, setMovieDetails] = useState(null);
   const [error, setError] = useState(null);
   const { movieId } = useParams();
+
   const BASE_IMG_URL = 'https://image.tmdb.org/t/p/w400';
 
   useEffect(() => {
@@ -52,10 +53,20 @@ const MovieDetails = () => {
             <h4>Genres</h4>
             <ul>
               {movieDetails.genres.map(genre => (
-                <li key={genre.id}>{genre.name}</li>
+                <li key={genre.id} className={css.itemMovieDetails}>
+                  {genre.name}
+                </li>
               ))}
             </ul>
-            <Link to={`/movies/${movieDetails.id}/cast`}>Cast</Link>
+            <h3>Additional information</h3>
+            <ul>
+              <li className={css.itemMovieDetails}>
+                <Link to={`/movies/${movieDetails.id}/cast`}>Cast</Link>
+              </li>
+              <li className={css.itemMovieDetails}>
+                <Link to={`/movies/${movieDetails.id}/reviews`}>Reviews</Link>
+              </li>
+            </ul>
           </div>
         </div>
       )}

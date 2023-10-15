@@ -63,3 +63,18 @@
 .itemCast {
   list-style: none;
 }
+
+.itemReviews {
+  list-style: none;
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+
+.itemMovieDetails {
+  margin-bottom: 12px;
+}
+
+.reviews {
+  padding-bottom: 8px;
+  background-color: rgb(166, 164, 164);
+}
