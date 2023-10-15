@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/223.e1045b6c.chunk.js","mappings":"iKAUA,UARgB,WACd,OACE,0BACE,kJAGL,C","sources":["components/reviews.jsx"],"sourcesContent":["import React from 'react';\n\nconst Reviews = () => {\n  return (\n    <div>\n      <h2>Інформація про огляди</h2>\n    </div>\n  );\n};\n\nexport default Reviews;\n"],"names":[],"sourceRoot":""}
