@@ -33,7 +33,7 @@ const MovieDetails = () => {
         setError(error.message);
         console.error(error);
       });
-  }, []);
+  }, [movieId]);
 
   return (
     <div>

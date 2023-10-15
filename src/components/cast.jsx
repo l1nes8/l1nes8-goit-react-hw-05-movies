@@ -32,7 +32,7 @@ const Cast = () => {
         serError(error);
         console.error(error);
       });
-  }, []);
+  }, [movieId]);
 
   return (
     <div>

@@ -30,7 +30,7 @@ const Reviews = () => {
       .catch(error => {
         console.error(error);
       });
-  }, []);
+  }, [movieId]);
 
   return (
     <div>
