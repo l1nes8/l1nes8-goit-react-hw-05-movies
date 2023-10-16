@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { useParams, Outlet } from 'react-router-dom';
 import css from 'style.module.css';
 
 const MovieDetails = () => {
@@ -41,6 +41,7 @@ const MovieDetails = () => {
       {movieDetails && (
         <div className={css.description}>
           <img
+            className={css.imgMovies}
             src={`${BASE_IMG_URL}/${movieDetails.poster_path}`}
             alt={movieDetails.title}
           />
@@ -66,6 +67,7 @@ const MovieDetails = () => {
               <li className={css.itemMovieDetails}>
                 <Link to={`/movies/${movieDetails.id}/reviews`}>Reviews</Link>
               </li>
+              <Outlet />
             </ul>
           </div>
         </div>

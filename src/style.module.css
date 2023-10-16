@@ -78,3 +78,7 @@
   padding-bottom: 8px;
   background-color: rgb(166, 164, 164);
 }
+
+.imgMovies {
+  max-height: 600px;
+}
